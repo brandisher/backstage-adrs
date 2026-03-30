@@ -5,6 +5,7 @@ metadata:
   description: An example of a Backstage application.
   annotations:
     backstage.io/adr-location: docs/adr
+    backstage.io/source-location: url:https://github.com/brandisher/backstage-adrs/tree/main/
 spec:
   type: website
   owner: john@example.com
