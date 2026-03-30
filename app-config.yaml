@@ -96,8 +96,8 @@ catalog:
       target: ../../catalog-info.yaml
 
     # Component catalogs
-    - type: file
-      target: ../../components/networking/catalog-info.yaml
+    - type: url
+      target: https://github.com/brandisher/backstage-adr-networking/blob/main/catalog-info.yaml
     - type: file
       target: ../../components/api/catalog-info.yaml
 
