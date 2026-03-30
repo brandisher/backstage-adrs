@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: networking
+  description: Kubernetes networking stack including CNI, service mesh, and ingress.
+  annotations:
+    backstage.io/adr-location: docs/adr
+    backstage.io/source-location: url:https://github.com/brandisher/backstage-adrs/tree/main/components/networking/
+spec:
+  type: service
+  owner: john@example.com
+  lifecycle: experimental

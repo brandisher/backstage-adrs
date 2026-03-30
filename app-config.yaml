@@ -95,6 +95,12 @@ catalog:
     - type: file
       target: ../../catalog-info.yaml
 
+    # Component catalogs
+    - type: file
+      target: ../../components/networking/catalog-info.yaml
+    - type: file
+      target: ../../components/api/catalog-info.yaml
+
     # Local example template
     - type: file
       target: ../../examples/template/template.yaml

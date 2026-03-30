@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api
+  description: Core API platform and guidelines for internal and external service interfaces.
+  annotations:
+    backstage.io/adr-location: docs/adr
+    backstage.io/source-location: url:https://github.com/brandisher/backstage-adrs/tree/main/components/api/
+spec:
+  type: service
+  owner: john@example.com
+  lifecycle: experimental
