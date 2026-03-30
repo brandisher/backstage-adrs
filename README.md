@@ -42,10 +42,22 @@ A [Backstage](https://backstage.io) developer portal with [Architecture Decision
 
 ADR files live in `docs/adr/` and follow MADR format with sequential numbering (`0001-*.md`). To add a new ADR, create a file following the existing pattern, commit, and push. The ADR plugin will pick it up automatically.
 
+## What This Demo Shows
+
+This demo illustrates several capabilities of the Backstage ADR plugin:
+
+- **Per-component ADRs** — Each component in the catalog has its own ADR tab rendering decisions relevant to that component.
+- **Multi-repo support** — ADRs can live in the same repo as the Backstage app or in entirely separate repositories. The catalog pulls them in via the `backstage.io/adr-location` and `backstage.io/source-location` annotations.
+  - `backstage-adr-test` and `api` components — ADRs served from this repo ([brandisher/backstage-adrs](https://github.com/brandisher/backstage-adrs))
+  - `networking` component — ADRs served from a separate repo ([brandisher/backstage-adr-networking](https://github.com/brandisher/backstage-adr-networking))
+- **Search integration** — ADR content is indexed and searchable via the Backstage search bar.
+- **MADR format** — All ADRs follow the [MADR](https://adr.github.io/madr/) template (status, context, decision drivers, options, outcome, consequences).
+
 ## Project Structure
 
 ```
-docs/adr/              # Architecture Decision Records
+docs/adr/              # Architecture Decision Records for the root component
+components/api/        # API component with its own ADRs
 packages/app/          # Backstage frontend
 packages/backend/      # Backstage backend
 examples/              # Example catalog entities
